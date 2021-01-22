@@ -1,4 +1,7 @@
 # sRV
+This code is used as part of a project to make a Smart Radiator Valve. The details of the project can be found on Instructables: -
+https://www.instructables.com/Smart-Radiator-Valve-With-Home-Assistant/
+
 ## Smart Radiator Valve controllable with MQTT
 
 First you will need to add your unique credentials for connection to your WiFi and MQTT broker.
