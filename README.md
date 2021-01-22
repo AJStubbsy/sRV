@@ -1,5 +1,5 @@
 # sRV
-Smart Radiator Valve controllable with MQTT
+## Smart Radiator Valve controllable with MQTT
 
 First you will need to add your unique credentials for connection to your WiFi and MQTT broker.
 
