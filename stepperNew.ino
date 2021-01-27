@@ -45,6 +45,10 @@ char* sRV_room_state = "sRV/state";
 // This needs to be unique for each sRV. I just add a letter to the end of ESP8266Client.
 char* clientid = "ESP8266Client";
 
+// A unique ID here can be helpful to identify the correct esp for OTA firmware updates
+char* OTA_name = "esp_name";
+char* OTA_pswd = "OTA_Password";
+
 WiFiClient espClient;
 PubSubClient client(espClient);
 long lastMsg = 0;
@@ -114,8 +118,8 @@ void setup_wifi() {
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
  
-  ArduinoOTA.setHostname("ESP8266");
-  ArduinoOTA.setPassword("esp8266");
+  ArduinoOTA.setHostname(OTA_name);
+  ArduinoOTA.setPassword(OTA_pswd);
 
   ArduinoOTA.onStart([]() {
     Serial.println("Start");
