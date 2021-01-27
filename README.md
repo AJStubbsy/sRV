@@ -35,3 +35,10 @@ The "clientid" also needs to be unique for each sRV. I just add a letter to the 
 ```Python
 char* clientid = "ESP8266Client";
 ```
+
+Finally, it's helpful to personalise the esp-name so it's easy to pick the correct device, when choosing the port in Arduino IDE.
+
+```Python
+char* OTA_name = "esp_name";
+char* OTA_pswd = "OTA_password";
+```
