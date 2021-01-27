@@ -2,7 +2,7 @@
 This code is used as part of a project to make a Smart Radiator Valve. The details of the project can be found on Instructables: -
 https://www.instructables.com/Smart-Radiator-Valve-With-Home-Assistant/
 
-## Upload BasicOTA from Arduino IDE
+## Prepare esp8266 for OTA updates
 Follow a turorial to prepare the esp8266 for ota updates. I used this one: -
 https://lastminuteengineers.com/esp8266-ota-updates-arduino-ide/
 
