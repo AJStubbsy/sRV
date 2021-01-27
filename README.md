@@ -19,7 +19,7 @@ const char* mqttUser = "mqttUsername";
 const char* mqttPassword = "mqttPassword";
 ```
 
-You also need to change these to match the 'MQTT Switch' component in Home Assistant. These need to be unique for each sRV.
+You also need to change these to match the 'MQTT Cover' platform in Home Assistant. These need to be unique for each sRV.
 
 ```Python
 char* sRV_room = "sRV/move";
