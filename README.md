@@ -7,7 +7,9 @@ Follow a turorial to prepare the esp8266 for ota updates. I used this one: -
 https://lastminuteengineers.com/esp8266-ota-updates-arduino-ide/
 
 ## Smart Radiator Valve controllable with MQTT
-First you will need to add your unique credentials for connection to your WiFi and MQTT broker.
+Now you will be able to load the stepperNew.ino file and flash OTA but before you do this, some personalisation will have to be made to the sketch.
+
+You will need to add your unique credentials for connection to your WiFi and MQTT broker.
 
 ```Python
 const char* ssid = "your SSID";
@@ -23,7 +25,11 @@ You also need to change these to match the 'MQTT Switch' component in Home Assis
 char* sRV_room = "sRV/move";
 char* sRV_room_state = "sRV/state";
 ```
-
+e.g.
+```Python
+char* sRV_room = "sRV_bedroom/move";
+char* sRV_room_state = "sRV_bedroom/state";
+```
 The "clientid" also needs to be unique for each sRV. I just add a letter to the end of ESP8266Client.
 
 ```Python
